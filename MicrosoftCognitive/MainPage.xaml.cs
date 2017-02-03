@@ -80,6 +80,7 @@ namespace MicrosoftCognitive
         {
             try
             {
+                
                 emotionResult = await emotionServiceClient.RecognizeAsync(imageStream.AsStream());
 
                 if(emotionResult != null)
@@ -92,7 +93,7 @@ namespace MicrosoftCognitive
                         "Anger: " + score.Anger + "\n" +
                         "Neutral: " + score.Neutral + "\n" +
                         "Disgust: " + score.Disgust + "\n" +
-                        "Contempt: " + score.Contempt + "\n";
+                        "Conempt" + score.Contempt + "\n";
                 }
             }
             catch

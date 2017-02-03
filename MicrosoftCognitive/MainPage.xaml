@@ -7,23 +7,33 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#403250">
         <Image x:Name="image"
                HorizontalAlignment="Left"
                Height="213"
                Margin="34,174,0,0"
                VerticalAlignment="Top" 
                Width="253"/>
-        <TextBox x:Name="output" HorizontalAlignment="Left" Margin="349,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="213" Width="249"/>
+        <TextBox x:Name="output"
+                 HorizontalAlignment="Left" 
+                 Margin="322,174,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="TextBox" 
+                 VerticalAlignment="Top" 
+                 BorderBrush="#C0B3A0"
+                 Height="213" 
+                 Width="249"/>
         <Button x:Name="takePhoto" 
                 Content="Take A Picture" 
                 HorizontalAlignment="Left" 
                 Margin="99,70,0,0"
+                Background="#e14659"
                 VerticalAlignment="Top"
                 Click="takePhoto_Click"/>
         <Button x:Name="getEmotion" 
                 Content="Check Emotion" 
                 HorizontalAlignment="Left"
+                Background="#e14659"
                 Margin="322,70,0,0"
                 VerticalAlignment="Top" 
                 Width="183"
