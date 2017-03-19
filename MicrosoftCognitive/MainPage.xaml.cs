@@ -30,18 +30,21 @@ namespace MicrosoftCognitive
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        //This code shows how to use the CameraCaptureUI to take a picture and store picture. 
         CameraCaptureUI captureUI = new CameraCaptureUI();
         StorageFile photo;
         IRandomAccessStream imageStream;
 
-
+        //API secret key from Microsoft Cognitive Services website
         const string APIKEY = "cf9141e94fbe4c40b7561b39f63075d8";
+        //Definig my emotionServiceClient with ProjectOxfordEmotion client
         EmotionServiceClient emotionServiceClient = new EmotionServiceClient(APIKEY);
 
         Emotion[] emotionResult;
         public MainPage()
         {
             this.InitializeComponent();
+            //Definig my photo format which will be Jpeg
             captureUI.PhotoSettings.Format = CameraCaptureUIPhotoFormat.Jpeg;
             captureUI.PhotoSettings.CroppedAspectRatio = new Size(200, 200);
         }
